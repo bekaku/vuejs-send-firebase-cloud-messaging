@@ -39,7 +39,7 @@ var app = new Vue({
   methods: {
     submitAction: function () {
 
-      if(!this.fcmJson.notification.title || !this.fcmJson.notification.body || !this.fcmJson.notification.to){
+      if(!this.fcmJson.notification.title || !this.fcmJson.notification.body || !this.fcmJson.to){
         this.alertMsg = '<span class="text-danger">title, body, to can\'t empty</span>'
       }else{
         this.alertMsg = 'Please wait...'
