@@ -3,19 +3,13 @@ const jsonApiHeader = {
   "Authorization": "key=YOUR_KEY",
 };
 
-let data ={
-  title: 'foo',
-  body: 'bar',
-  userId: 1
-}
-
 var app = new Vue({
   el: '#app',
   data: {
     alertMsg : "",
     fcmUrl : "https://fcm.googleapis.com/fcm/send",
     fcmJson :{
-      to : "/topics/edr_teacher_edrdemo_137",
+      to : "/topics/your_topics_to_send",
       content_available : true,
       notification : {
         title : "",
@@ -65,21 +59,6 @@ var app = new Vue({
       } catch (error) {
         console.error(error);
       }
-      
-      // axios({
-      //   method: 'post',
-      //   url: this.fcmUrl,
-      //   headers: jsonApiHeader,
-      //   data: dataParam
-      // })
-      // .then(function (response) {
-      //   // console.log(response);
-      //   return response;
-      // })
-      // .catch(function (error) {
-      //   console.log(error);
-      // });
-
     }
   }
 })
