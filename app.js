@@ -9,7 +9,11 @@ var app = new Vue({
     alertMsg : "",
     fcmUrl : "https://fcm.googleapis.com/fcm/send",
     fcmJson :{
+<<<<<<< HEAD
       to : "/topics/your_topics_to_send",
+=======
+      to : "/topics/your_topic_to_send",
+>>>>>>> d113d677eb9b1d3b74765a2ebf702c8168d4ea21
       content_available : true,
       notification : {
         title : "",
@@ -59,6 +63,11 @@ var app = new Vue({
       } catch (error) {
         console.error(error);
       }
+<<<<<<< HEAD
+=======
+      
+
+>>>>>>> d113d677eb9b1d3b74765a2ebf702c8168d4ea21
     }
   }
 })
